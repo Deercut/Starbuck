@@ -11,13 +11,15 @@
   <body>
     <section>
         <div class="cercle"></div>
+        <div class="cercle2"></div>
+        <div class="cercle3"></div>
       <header>
         <a href="#"><img src="/IMG/logo.png" class="logo" /></a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Quoi de new</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a  href="#">Home</a></li>
+          <li><a  href="#">Menu</a></li>
+          <li><a  href="#">Quoi de new</a></li>
+          <li><a  href="#">Contact</a></li>
         </ul>
       </header>
       <div class="contenu">
@@ -43,9 +45,9 @@
         </div>
       </div>
       <ul class="list">
-        <li> <img src="/IMG/thumb1.png" onclick="imgPop('/IMG/img1.png');changeCercleCouleur('#017143')"></li>
-        <li> <img src="/IMG/thumb2.png" onclick="imgPop('/IMG/img2.png');changeCercleCouleur('#eb7495')"></li>
-        <li> <img src="/IMG/thumb3.png" onclick="imgPop('/IMG/img3.png');changeCercleCouleur('#d752b1')"></li>
+        <li> <img src="/IMG/thumb1.png" onclick="imgPop('/IMG/img1.png');changeCercleCouleur('#017143');changeCercleCouleur2('#017143')"></li>
+        <li> <img src="/IMG/thumb2.png" onclick="imgPop('/IMG/img2.png');changeCercleCouleur('#eb7495');changeCercleCouleur2('#eb7495')"></li>
+        <li> <img src="/IMG/thumb3.png" onclick="imgPop('/IMG/img3.png');changeCercleCouleur('#d752b1');changeCercleCouleur2('#d752b1')"></li>
       </ul>
       <ul class="rs">
         <li><a href="#"><img src="/IMG/facebook.png"></a></li>
@@ -61,6 +63,10 @@
         }
         function changeCercleCouleur(color){
             const cercle = document.querySelector('.cercle');
+            cercle.style.background = color;
+        }
+        function changeCercleCouleur2(color){
+            const cercle = document.querySelector('.cercle3');
             cercle.style.background = color;
         }
     </script>
