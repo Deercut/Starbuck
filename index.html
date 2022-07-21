@@ -7,8 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <section>
+        <div class="cercle"></div>
       <header>
         <a href="#"><img src="/IMG/logo.png" class="logo" /></a>
         <ul>
@@ -41,10 +43,28 @@
         </div>
       </div>
       <ul class="list">
-        <li> <img src="/IMG/thumb1.png"></li>
-        <li> <img src="/IMG/thumb2.png"></li>
-        <li> <img src="/IMG/thumb3.png"></li>
+        <li> <img src="/IMG/thumb1.png" onclick="imgPop('/IMG/img1.png');changeCercleCouleur('#017143')"></li>
+        <li> <img src="/IMG/thumb2.png" onclick="imgPop('/IMG/img2.png');changeCercleCouleur('#eb7495')"></li>
+        <li> <img src="/IMG/thumb3.png" onclick="imgPop('/IMG/img3.png');changeCercleCouleur('#d752b1')"></li>
+      </ul>
+      <ul class="rs">
+        <li><a href="#"><img src="/IMG/facebook.png"></a></li>
+        <li><a href="#"><img src="/IMG/instagram.png"></a></li>
+        <li><a href="#"><img src="/IMG/twitter.png"></a></li>
       </ul>
     </section>
+
+
+    <script type="text/javascript">
+        function imgPop(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCercleCouleur(color){
+            const cercle = document.querySelector('.cercle');
+            cercle.style.background = color;
+        }
+    </script>
+
+
   </body>
 </html>
