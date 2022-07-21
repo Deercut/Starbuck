@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 80px ;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.contenu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenu .textBox {
+    position: relative;
+    max-width: 600px;
+}
+.contenu .textBox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.contenu .textBox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.contenu .textBox p{
+    color: #333;
+}
+.contenu .textBox a{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 8px 20px;
+    background-color: #017143;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    box-shadow: 1px 1px 12px 
+    #333;
+    transition: 0.5s;
+}
+.contenu .textBox a:hover{
+    background-color: #019e5d;
+    transform: translateY(-5px);
+}
+.contenu .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.contenu .imgBox img{
+    max-width: 360px;
+}
+.list{
+    position:absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+}
+.list li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.list li:hover{
+    transform: translateY(-15px);
+}
+
+
+.list li img{
+    max-width: 60px;
+}
